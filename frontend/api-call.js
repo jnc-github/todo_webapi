@@ -54,7 +54,7 @@ function refreshTodoList(todoList){
 }
 
 function getAll(){
-    fetch("https://jnc-github.github.io/api/get-all.php")
+    fetch("../api/get-all.php")
     // fetch("http://localhost:8017/Cloud_Lesson8_Web_API_Basic_Tutorial14_ToDoList/todo/webapi_2/api/get-all.php")
         .then((res) => res.json())
         .then((data) => {
@@ -69,7 +69,7 @@ function getAll(){
 }
 
 function getOneById(index){
-    fetch("../api/get-one-by-id.php",{
+    fetch("http://localhost:8017/Cloud_Lesson8_Web_API_Basic_Tutorial14_ToDoList/todo/webapi_2/api/get-one-by-id.php",{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ function getOneById(index){
 }
 
 function add(title){
-    fetch("../api/add.php",{
+    fetch("http://localhost:8017/Cloud_Lesson8_Web_API_Basic_Tutorial14_ToDoList/todo/webapi_2/api/add.php",{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ function add(title){
 }
 
 function updateOneById(index, title, status){
-    fetch("../api/update-one-by-id.php",{
+    fetch("http://localhost:8017/Cloud_Lesson8_Web_API_Basic_Tutorial14_ToDoList/todo/webapi_2/api/update-one-by-id.php",{
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -134,7 +134,7 @@ function updateOneById(index, title, status){
 }
 
 function deleteOneById(index){
-    fetch("../api/delete-one-by-id.php",{
+    fetch("http://localhost:8017/Cloud_Lesson8_Web_API_Basic_Tutorial14_ToDoList/todo/webapi_2/api/delete-one-by-id.php",{
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
