@@ -54,7 +54,7 @@ function refreshTodoList(todoList){
 }
 
 function getAll(){
-    fetch("../api/get-all.php")
+    fetch("https://jnc-github.github.io/api/get-all.php")
     // fetch("http://localhost:8017/Cloud_Lesson8_Web_API_Basic_Tutorial14_ToDoList/todo/webapi_2/api/get-all.php")
         .then((res) => res.json())
         .then((data) => {
