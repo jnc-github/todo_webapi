@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./frontend/style.css">
+</head>
+<body>
+<h1>Todo List App - Web API Version</h1>
+
+
+<h1>My To-do List</h1>
+<button class="btn-refresh">Refresh</button>
+<div class="main-list">
+    <table id="main-list">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+<template id="template-item-row">
+    <tr item-id="" item-title="" item-status="">
+        <td class="index"></td>
+        <td class="title"></td>
+        <td class="status"><input type="checkbox" disabled></td>
+    </tr>
+</template>
+
+
+<h1>Add Item</h1>
+<div id="form-add">
+    <p>
+        <label>Title</label>
+        <input type="text" name="title">
+    </p>
+    <button class="btn-add">Add</button>
+</div>
+
+
+<h1>Update Item</h1>
+<div id="form-update">
+    <p class="p-hidden">
+        <label>Index</label>
+        <input type="text" name="index">
+    </p>
+    <p>
+        <label>Title</label>
+        <input type="text" name="title">
+    </p>
+    <p>
+        <label>Status</label>
+        <input type="checkbox" name="status"> 
+    </p>
+    <button class="btn-update">Update</button>
+</div>
+
+<h1>Delete Item</h1>
+<div id="form-delete">
+    <p>
+        <label>Index</label>
+        <input type="text" name="index">
+    </p>
+    <button class="btn-delete">Delete</button>
+</div>
+
+
+<script src="./frontend/api-call.js"></script>
+<script src="./frontend/main.js"></script>
+
+</body>
+</html>
+

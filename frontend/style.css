@@ -1,0 +1,27 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #f0f0f0;
+    text-align: left;
+    padding: 8px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+tbody tr:hover{
+    background-color: #f7eaf2;
+}
+
+tbody tr[selected], tbody tr[selected]:hover{
+    background-color: #f3bdde;
+}
+
+.p-hidden {
+    display: none;
+}
