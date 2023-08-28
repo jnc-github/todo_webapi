@@ -8,7 +8,6 @@ include("../backend/todoItem.php");
 session_start();
 
 
-
 $response = [
     "result" => false,
     "message" => "",
