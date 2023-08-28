@@ -53,9 +53,9 @@ function refreshTodoList(todoList){
     }
 }
 
+// fetch("http://localhost:8017/2023_todo_github/webapi_2/api/get-all.php")
 function getAll(){
     fetch("https://jnc-github.github.io/todo_webapi/api/get-all.php")
-    // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/get-all.php")
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
