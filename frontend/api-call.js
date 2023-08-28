@@ -69,7 +69,8 @@ function getAll(){
 }
 
 function getOneById(index){
-    fetch("http://localhost:8017/2023_todo_github/webapi_2/api/get-one-by-id.php",{
+    fetch("https://jnc-github.github.io/todo_webapi/api/get-one-by-id.php",{
+    // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/get-one-by-id.php",{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +90,8 @@ function getOneById(index){
 
 function add(title){
     // fetch("../api/add.php",{
-    fetch("http://localhost:8017/2023_todo_github/webapi_2/api/add.php",{
+    fetch("https://jnc-github.github.io/todo_webapi/api/add.php",{
+    // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/add.php",{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -111,7 +113,8 @@ function add(title){
 }
 
 function updateOneById(index, title, status){
-    fetch("http://localhost:8017/2023_todo_github/webapi_2/api/update-one-by-id.php",{
+    fetch("https://jnc-github.github.io/todo_webapi/api/update-one-by-id.php",{
+    // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/update-one-by-id.php",{
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -135,7 +138,8 @@ function updateOneById(index, title, status){
 }
 
 function deleteOneById(index){
-    fetch("http://localhost:8017/2023_todo_github/webapi_2/api/delete-one-by-id.php",{
+    fetch("https://jnc-github.github.io/todo_webapi/api/delete-one-by-id.php",{
+    // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/delete-one-by-id.php",{
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
