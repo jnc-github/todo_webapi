@@ -53,9 +53,10 @@ function refreshTodoList(todoList){
     }
 }
 
-// fetch("http://localhost:8017/2023_todo_github/webapi_2/api/get-all.php")
 function getAll(){
-    fetch("https://jnc-github.github.io/todo_webapi/api/get-all.php")
+    fetch("../api/get-all.php")
+    // fetch("https://jnc-github.github.io/todo_webapi/api/get-all.php")
+    // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/get-all.php")
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
@@ -69,7 +70,8 @@ function getAll(){
 }
 
 function getOneById(index){
-    fetch("https://jnc-github.github.io/todo_webapi/api/get-one-by-id.php",{
+    fetch("../api/get-one-by-id.php",{
+    // fetch("https://jnc-github.github.io/todo_webapi/api/get-one-by-id.php",{
     // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/get-one-by-id.php",{
         method: 'POST',
         headers: {
@@ -89,8 +91,8 @@ function getOneById(index){
 }
 
 function add(title){
-    // fetch("../api/add.php",{
-    fetch("https://jnc-github.github.io/todo_webapi/api/add.php",{
+    fetch("../api/add.php",{
+    // fetch("https://jnc-github.github.io/todo_webapi/api/add.php",{
     // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/add.php",{
         method: 'POST',
         headers: {
@@ -113,7 +115,8 @@ function add(title){
 }
 
 function updateOneById(index, title, status){
-    fetch("https://jnc-github.github.io/todo_webapi/api/update-one-by-id.php",{
+    fetch("../api/update-one-by-id.php",{
+    // fetch("https://jnc-github.github.io/todo_webapi/api/update-one-by-id.php",{
     // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/update-one-by-id.php",{
         method: 'PUT',
         headers: {
@@ -138,7 +141,8 @@ function updateOneById(index, title, status){
 }
 
 function deleteOneById(index){
-    fetch("https://jnc-github.github.io/todo_webapi/api/delete-one-by-id.php",{
+    fetch("../api/delete-one-by-id.php",{
+    // fetch("https://jnc-github.github.io/todo_webapi/api/delete-one-by-id.php",{
     // fetch("http://localhost:8017/2023_todo_github/webapi_2/api/delete-one-by-id.php",{
         method: 'DELETE',
         headers: {
